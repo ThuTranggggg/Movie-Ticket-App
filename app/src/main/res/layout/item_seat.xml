@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txtSeat"
+    android:layout_width="@dimen/seat_size"
+    android:layout_height="@dimen/seat_size"
+    android:layout_margin="6dp"
+    android:background="@drawable/bg_seat_available"
+    android:gravity="center"
+    android:textColor="@color/color_text_primary"
+    android:textSize="13sp"
+    android:textStyle="bold" />
