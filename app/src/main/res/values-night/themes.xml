@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.MovieTicketApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorOnPrimary">@color/color_white</item>
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorOnSecondary">@color/color_black</item>
+        <item name="colorTertiary">@color/color_info</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/color_background</item>
+        <item name="android:windowBackground">@color/color_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="materialCardViewElevatedStyle">@style/Widget.MovieVerse.Card</item>
+        <item name="textInputStyle">@style/Widget.MovieVerse.TextInputLayout</item>
+        <item name="toolbarStyle">@style/Widget.MovieVerse.Toolbar</item>
+    </style>
+</resources>
