@@ -31,6 +31,7 @@
     <string name="ticket_details">Ticket Details</string>
     <string name="booking_success">Booking successful</string>
     <string name="success_description">Your seats are reserved. We have prepared a reminder before showtime.</string>
+    <string name="success_description_with_showtime">Your seats are reserved. Showtime starts at %1$s.</string>
     <string name="go_to_home">Back to home</string>
     <string name="view_my_tickets">View my tickets</string>
     <string name="status_confirmed">Confirmed</string>
