@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:navigationIcon="@android:drawable/ic_media_previous"
+            android:title="@string/ticket_details" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/space_20">
+
+                <LinearLayout
+                    android:id="@+id/layoutSuccessBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_surface_card"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_24"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:background="@drawable/bg_success_circle"
+                        android:gravity="center"
+                        android:text="✓"
+                        android:textColor="@color/color_success"
+                        android:textSize="34sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_16"
+                        android:text="@string/booking_success"
+                        android:textColor="@color/color_text_primary"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtSuccessDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_8"
+                        android:gravity="center"
+                        android:text="@string/success_description"
+                        android:textColor="@color/color_text_secondary" />
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_20"
+                    app:cardBackgroundColor="@color/color_card"
+                    app:cardCornerRadius="@dimen/radius_large"
+                    app:strokeColor="@color/color_stroke">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_20">
+
+                        <TextView
+                            android:id="@+id/txtMovieTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_text_primary"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            tools:text="Dune: Part Two" />
+
+                        <TextView
+                            android:id="@+id/txtTicketStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_12"
+                            android:background="@drawable/bg_badge_success"
+                            android:paddingStart="@dimen/space_12"
+                            android:paddingTop="@dimen/space_8"
+                            android:paddingEnd="@dimen/space_12"
+                            android:paddingBottom="@dimen/space_8"
+                            android:textColor="@color/color_white"
+                            tools:text="Status: Confirmed" />
+
+                        <TextView
+                            android:id="@+id/txtBookingId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_16"
+                            android:textColor="@color/color_text_secondary"
+                            tools:text="Booking ID: BK-294841" />
+
+                        <TextView
+                            android:id="@+id/txtTheater"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_12"
+                            android:textColor="@color/color_text_secondary"
+                            tools:text="Theater: Galaxy Cinema" />
+
+                        <TextView
+                            android:id="@+id/txtShowtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_12"
+                            android:textColor="@color/color_text_secondary"
+                            tools:text="Showtime: Apr 10, 19:30" />
+
+                        <TextView
+                            android:id="@+id/txtSeats"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_12"
+                            android:textColor="@color/color_text_secondary"
+                            tools:text="Seats: A1, A2" />
+
+                        <TextView
+                            android:id="@+id/txtQuantity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_12"
+                            android:textColor="@color/color_text_secondary"
+                            tools:text="Quantity: 2" />
+
+                        <TextView
+                            android:id="@+id/txtTotalPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_16"
+                            android:textColor="@color/color_text_primary"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            tools:text="$24.00" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_16"
+                            android:text="@string/ticket_reminder_hint"
+                            android:textColor="@color/color_info" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMyTickets"
+                    style="@style/Widget.MovieVerse.Button.Primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:text="@string/view_my_tickets" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnHome"
+                    style="@style/Widget.MovieVerse.Button.Outline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_12"
+                    android:text="@string/go_to_home" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

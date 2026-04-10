@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_16"
+    app:cardBackgroundColor="@color/color_card"
+    app:cardCornerRadius="@dimen/radius_large"
+    app:strokeColor="@color/color_stroke">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_20">
+
+        <TextView
+            android:id="@+id/txtMovieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_primary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Interstellar" />
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_12"
+            android:background="@drawable/bg_badge_success"
+            android:paddingStart="@dimen/space_12"
+            android:paddingTop="@dimen/space_8"
+            android:paddingEnd="@dimen/space_12"
+            android:paddingBottom="@dimen/space_8"
+            android:textColor="@color/color_white"
+            tools:text="Status: Confirmed" />
+
+        <TextView
+            android:id="@+id/txtTheater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_16"
+            android:textColor="@color/color_text_secondary"
+            tools:text="CGV Landmark 81" />
+
+        <TextView
+            android:id="@+id/txtShowtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8"
+            android:textColor="@color/color_text_secondary"
+            tools:text="Apr 10, 19:30" />
+
+        <TextView
+            android:id="@+id/txtSeats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8"
+            android:textColor="@color/color_text_secondary"
+            tools:text="Seats: A1, A2" />
+
+        <TextView
+            android:id="@+id/txtBookingCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8"
+            android:textColor="@color/color_text_secondary"
+            tools:text="Booking ID: BK-12345" />
+
+        <TextView
+            android:id="@+id/txtTotalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_12"
+            android:textColor="@color/color_text_primary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="$24.00" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
